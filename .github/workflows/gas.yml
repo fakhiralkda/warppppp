@@ -1,0 +1,21 @@
+name: gaskan
+
+on:
+#  release:
+#    types: [published]
+  push:
+    branches:
+      - main
+env:
+  ID: ${{ secrets.ID }}
+jobs:
+  build:
+    runs-on: python-3.8
+
+    steps:
+       - name: Checkout
+         uses: actions/checkout@main
+       - name: Download Script
+         run: pip3 install wheel setuptools requests
+       - name: Running Script
+         run: timeout 240s python3 wp.py
