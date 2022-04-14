@@ -1,11 +1,8 @@
 name: gaskan
 
 on:
-#  release:
-#    types: [published]
-  push:
-    branches:
-      - main
+  workflows-dispatch:
+
 env:
   ID: ${{ secrets.ID }}
 jobs:
