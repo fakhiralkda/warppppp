@@ -1,7 +1,6 @@
 name: gaskan
 
-on:
-  workflows-dispatch:
+on: workflow_dispatch
 
 env:
   ID: ${{ secrets.ID }}
