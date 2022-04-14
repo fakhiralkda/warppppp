@@ -5,17 +5,14 @@ import random
 import string
 import time
 import os
-os.system("echo WARP-PLUS-CLOUDFLARE By ALIILAPRO")
+import sys
+os.system("title WARP-PLUS-CLOUDFLARE By ALIILAPRO")
 os.system('cls' if os.name == 'nt' else 'clear')
-print ("[+] ABOUT SCRIPT:")
-print ("[-] With this script, you can getting unlimited GB on Warp+.")
+print ("[+] THIS SCRIPT CODDED BY ALIILAPRO")
 print ("[-] Version: 4.0.0")
-print ("[+] THIS SCRIPT CODDED BY ALIILAPRO") 
-print ("[-] SITE: aliilapro.github.io") 
-print ("[-] TELEGRAM: aliilapro")
+print ("[-] SITE: aliilapro.github.io")
 print ("--------")
 referrer = os.environ.get("ID")
-import sys
 def genString(stringLength):
 	try:
 		letters = string.ascii_letters + string.digits
@@ -61,19 +58,19 @@ while True:
 	if result == 200:
 		g = g + 1
 		os.system('cls' if os.name == 'nt' else 'clear')
-		print("                  WARP-PLUS-CLOUDFLARE (script)" + " By ALIILAPRO") 
+		print("")
+		animation = ["[■□□□□□□□□□] 10%","[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 100%"] 
 		for i in range(len(animation)):
 			time.sleep(0.5)
-			sys.stdout.write("\r[+] Preparing... [■■■■■■■■■■] 100%")
-			sys.stdout.flush()
-		print(f"\n[-] WORK ON ID: {referrer}")    
-		print(f"[:)] {g} GB has been delivered.")
+			sys.stdout.write("\r[+] Preparing... " + animation[i % len(animation)])
+			sys.stdout.flush()  
+		print(f"[:)] {g} GB has been successfully added to your account.")
 		print(f"[#] Total: {g} Good {b} Bad")
-		print("[*] Sleeping 24s.")
+		print("[*] After 24 seconds, a new request will be sent.")
 		time.sleep(24)
 	else:
 		b = b + 1
 		os.system('cls' if os.name == 'nt' else 'clear')
-		print("                  WARP-PLUS-CLOUDFLARE (script)" + " By ALIILAPRO")
+		print("")
 		print("[:(] Error when connecting to server.")
-		print(f"[#] Total: {g} Good {b} Bad")	
+		print(f"[#] Total: {g} Good {b} Bad")
